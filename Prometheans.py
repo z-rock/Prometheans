@@ -142,13 +142,13 @@ for ember in embers:
 
 monks = [monk_15, monk_14, monk_13, monk_12, monk_11, monk_10, monk_9, monk_8, monk_7, monk_6, monk_5, monk_4, monk_3, monk_2, monk_1]
 
-monk_pos = [i for i, x in enumerate(monks) if not x] # Filters out monks that are already minted and returns monks in their respective minting order
+monk_positions = [pos for pos, monk_minted in enumerate(monks) if not monk_minted] # Filters out monks that are already minted and returns monks in their respective minting order
 
-for pos in reversed(monk_pos):
+for position in reversed(monk_positions):
     while True:
         try:
             ember = prometheans_contract.functions.currentEmber().call()
-            if int(ember) == get_mint_block(pos):
+            if int(ember) == get_mint_block(position):
                 mint()
                 time.sleep(25)
                 number = get_number()
