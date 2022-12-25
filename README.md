@@ -2,9 +2,9 @@
 Python script that mints monks from the Prometheans project.  
 Make sure you have the lastest version of Python and Web3.py installed on your device. https://web3py.readthedocs.io/en/v5/quickstart.html  
 You'll need to manually input three items into the script for it to function.  
-1) An ETH node HTTPS link https://medium.com/quiknode/what-is-quiknode-api-6fcfeef172f6  
-2) An Etherscan API key https://etherscan.io/apis
-3) The private key for the wallet you want to use for minting https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key.  
+1) An ETH node HTTPS link (Line 8) https://medium.com/quiknode/what-is-quiknode-api-6fcfeef172f6  
+2) An Etherscan API key (Line 9) https://etherscan.io/apis
+3) The private key for the wallet you want to use for minting (Line 13) https://metamask.zendesk.com/hc/en-us/articles/360015289632-How-to-Export-an-Account-Private-Key.  
 
 
 The free tier apis have a cap on how many calls can be performed within a certain amount of time so if you are running this script for multiple days you need to keep an eye on it.  
