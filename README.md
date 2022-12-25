@@ -1,5 +1,6 @@
 # Prometheans
 Python script that mints monks from the Prometheans project.  
+Make sure you have the lastest version of Python and Web3.py installed on your device. https://web3py.readthedocs.io/en/v5/quickstart.html  
 You'll need to manually input three items into the script for it to function.  
 1) An ETH node HTTPS link https://medium.com/quiknode/what-is-quiknode-api-6fcfeef172f6  
 2) An Etherscan API key https://etherscan.io/apis
