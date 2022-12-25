@@ -153,7 +153,7 @@ for position in reversed(monk_positions):
                 time.sleep(25)
                 number = get_number()
                 print(f"MINTED MONK NUMBER {math.ceil(number / 5)}!")
-                if number / (pos + 1) <= 5:
+                if number / (position + 1) <= 5:
                     break
                 else:
                     continue
